@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="fonts/pixelfabric-clothes/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<header class="header-basic-light">
+
+  	<div class="header-limiter">
+
+  		<h1><a href="#">Art<span>Gallery</span></a></h1>
+
+  		<nav>
+  			<a href="index.html">Home</a>
+  			<a href="#">Exhibits</a>
+  			<a href="gallery.html">Gallery</a>
+  			<a href="contact.html">Contact Us</a>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  		</nav>
+  	</div>
+  </header>
+
+	<!-- Bottom bar with filter and cart info -->
+	<div class="bar">
+		<div class="filter">
+			<span class="filter__label">Filter: </span>
+			<button class="action filter__item filter__item--selected" data-filter="*">All</button>
+			<button class="action filter__item" data-filter=".jackets"><i class="icon icon--jacket"></i><span class="action__text">Drawings</span></button>
+			<button class="action filter__item" data-filter=".shirts"><i class="icon icon--shirt"></i><span class="action__text">Sculpture</span></button>
+			<button class="action filter__item" data-filter=".dresses"><i class="icon icon--dress"></i><span class="action__text">Photography</span></button>
+			<button class="action filter__item" data-filter=".trousers"><i class="icon icon--trousers"></i><span class="action__text">Collage</span></button>
+			<button class="action filter__item" data-filter=".shoes"><i class="icon icon--shoe"></i><span class="action__text">Painting</span></button>
+		</div>
+		<button class="cart">
+			<i class="cart__icon fa fa-shopping-cart"></i>
+			<span class="text-hidden">Shopping cart</span>
+			<span class="cart__count">0</span>
+		</button>
+	</div>
+	<!-- Main view -->
+	<div class="view">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+
+		</header>
+		<!-- Grid -->
+		<section class="grid grid--loading">
+			<!-- Loader -->
+			<img class="grid__loader" src="img/grid.svg" width="60" alt="Loader image" />
+			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
+			<div class="grid__sizer"></div>
+			<!-- Grid items -->
+			<div class="grid__item shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item--size-a shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item--size-a jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item--size-a dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item--size-a trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shirts">
+				<div class="slider">
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/sculpture.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item--size-a dresses">
+				<div class="slider">
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/photography.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item trousers">
+				<div class="slider">
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/collage.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item shoes">
+				<div class="slider">
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/painting.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item jackets">
+				<div class="slider">
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="img/drawing.jpg" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Dummy Product</h3>
+					<span class="meta__brand">Dummy Brand</span>
+					<span class="meta__price">$99</span>
+				</div>
+				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+		</section>
+		<!-- /grid-->
+	</div>
+	<!-- /view -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
